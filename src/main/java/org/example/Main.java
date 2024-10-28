@@ -12,11 +12,15 @@ public class Main {
 
         PdfTocCreator tocCreator = new PdfTocCreator();
 
+        PdfTocCreatorV1 tocCreatorV1 = new PdfTocCreatorV1();
+
         // Path to your PDF file
         String pdfFilePath = "/Users/sahilkapoor/downloads/samplepdf2.pdf";
+        String samplePdfV2 =  "/Users/sahilkapoor/downloads/samplepdfV2.pdf";
         String pdfFileSummaryPath = "/Users/sahilkapoor/downloads/samplepublicmarketsummary.pdf";
 
         // Generate the TOC by extracting the first line of each page
-        tocCreator.generateToc(pdfFilePath);
+//        tocCreator.generateToc(pdfFilePath);
+        tocCreatorV1.generateToc(samplePdfV2);
     }
 }
